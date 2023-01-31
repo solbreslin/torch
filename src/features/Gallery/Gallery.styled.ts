@@ -4,7 +4,8 @@ export const GalleryStyled = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  max-height: 66vh;
+  height: 66vh;
+  max-height: 500px;
   position: relative;
 
   img {

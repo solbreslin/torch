@@ -1,6 +1,7 @@
-import Button from '../../shared/Button/Button';
 import { useState } from 'react';
-import { Heart, Share } from 'phosphor-react';
+import { Share, Star } from 'phosphor-react';
+import Button from '../../shared/Button/Button';
+import { ListingActionsStyled } from './ListingActions.styled';
 
 type Props = {
   id: string;
@@ -8,6 +9,7 @@ type Props = {
 
 export const ListingActions: React.FC<Props> = ({ id }) => {
   const [sharePanelIsActive, setSharePanelIsActive] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
 
   function handleSave() {
     /*
@@ -24,6 +26,8 @@ export const ListingActions: React.FC<Props> = ({ id }) => {
         }
       )
     */
+
+    setIsSaved(!isSaved);
   }
 
   function handleShare() {
@@ -31,13 +35,19 @@ export const ListingActions: React.FC<Props> = ({ id }) => {
   }
 
   return (
-    <div>
-      <Button onClick={handleSave}>
-        <Heart size={16} /> Save
+    <ListingActionsStyled>
+      <Button variant={'icon'} onClick={handleSave}>
+        <Star
+          size={16}
+          color={isSaved ? 'orange' : 'currentColor'}
+          weight={isSaved ? 'fill' : 'regular'}
+        />{' '}
+        {isSaved ? <span>Saved</span> : <span>Save</span>}
       </Button>
-      <Button onClick={handleShare}>
-        <Share size={16} /> Share
+      <Button variant={'icon'} onClick={handleShare}>
+        <Share size={16} />
+        <span>Share</span>
       </Button>
-    </div>
+    </ListingActionsStyled>
   );
 };

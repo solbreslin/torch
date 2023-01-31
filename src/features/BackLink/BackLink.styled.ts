@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-export const ListingPageHeaderStyled = styled.header`
+export const BackLinkStyled = styled.header`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0.25rem 0;
+
+  a {
+    align-items: center;
+    display: flex;
+    gap: 0.4em;
+  }
 `;

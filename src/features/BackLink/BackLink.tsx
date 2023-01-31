@@ -1,9 +1,13 @@
 import { ActionText } from '../constants';
+import { CaretLeft } from 'phosphor-react';
+import { BackLinkStyled } from './BackLink.styled';
 
 const BackLink = () => (
-  <nav>
-    <a href="#">{ActionText.BACK_LINK}</a>
-  </nav>
+  <BackLinkStyled>
+    <a href="#">
+      <CaretLeft size={16} /> {ActionText.BACK_LINK}
+    </a>
+  </BackLinkStyled>
 );
 
 export default BackLink;

@@ -1,6 +1,14 @@
 import React from 'react';
 import { OverviewStyled } from './Overview.styled';
-import { Bathtub, Bed, User, Users, UsersThree } from 'phosphor-react';
+import {
+  Armchair,
+  Bathtub,
+  Bed,
+  CalendarCheck,
+  User,
+  Users,
+  UsersThree,
+} from 'phosphor-react';
 
 const ICON_SIZE = 21;
 
@@ -9,43 +17,94 @@ enum PropertyType {
   'Flat',
 }
 
-type Overview = {
+type PropertyOverview = {
   type: number;
   bedrooms: number;
   bathrooms: number;
   max_tenants: number;
+  furnished: boolean;
+};
+
+type Duration = 'week' | 'month' | 'year';
+
+type Availability = {
+  start_date: string;
+  min_tenancy: number;
+  min_tenancy_unit: Duration;
 };
 
 type Props = {
-  data: Overview;
+  availability: Availability;
+  property: PropertyOverview;
 };
 
-export const Overview: React.FC<Props> = ({ data }) => {
+const formatISODateStringToString = (dateString: string) => {
+  const dateParts = dateString.split('-');
+  const date = new Date(
+    parseInt(dateParts[0]),
+    parseInt(dateParts[1]) - 1,
+    parseInt(dateParts[2])
+  );
+
+  const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+
+  // @ts-ignore
+  return date.toLocaleDateString('en-GB', options);
+};
+
+export const Overview: React.FC<Props> = ({ availability, property }) => {
+  const availableDate = formatISODateStringToString(availability.start_date);
+
+  const maxTenants = property.max_tenants;
+
   return (
     <OverviewStyled>
-      <span>
-        <Bed size={ICON_SIZE} /> {data.bedrooms} bed
-      </span>
+      <div>
+        <span>
+          <Bed size={ICON_SIZE} />
+          {property.bedrooms} bed
+        </span>
 
-      <span>
-        <Bathtub size={ICON_SIZE} /> {data.bathrooms} bath
-      </span>
+        <span>
+          <Bathtub size={ICON_SIZE} />
+          {property.bathrooms} bath
+        </span>
 
-      <span>
-        {data.max_tenants === 1 ? (
-          <>
-            <User size={ICON_SIZE} /> {data.max_tenants} tenant
-          </>
-        ) : data.max_tenants === 2 ? (
-          <>
-            <Users size={ICON_SIZE} /> {data.max_tenants} tenants max
-          </>
-        ) : (
-          <>
-            <UsersThree size={ICON_SIZE} /> {data.max_tenants} tenants max
-          </>
-        )}
-      </span>
+        <span>
+          {maxTenants === 1 ? (
+            <>
+              <User size={ICON_SIZE} />
+              {maxTenants} tenant
+            </>
+          ) : maxTenants === 2 ? (
+            <>
+              <Users size={ICON_SIZE} />
+              {maxTenants} tenants max
+            </>
+          ) : (
+            <>
+              <UsersThree size={ICON_SIZE} />
+              {maxTenants} tenants max
+            </>
+          )}
+        </span>
+
+        <span>
+          <Armchair size={ICON_SIZE} />
+          Furnished
+        </span>
+      </div>
+
+      <div>
+        <span>
+          <CalendarCheck size={ICON_SIZE} />
+          Available from {availableDate}
+        </span>
+      </div>
     </OverviewStyled>
   );
 };

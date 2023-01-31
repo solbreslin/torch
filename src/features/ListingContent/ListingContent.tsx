@@ -18,7 +18,10 @@ export const ListingContent: React.FC<Props> = ({ data }) => {
       <div>
         <h1>{data.title}</h1>
         <ContentBlock>
-          <Overview data={data.overview} />
+          <Overview
+            property={data.property_overview}
+            availability={data.availability}
+          />
         </ContentBlock>
         <ContentBlock>
           <Features data={data.features} />
@@ -27,7 +30,7 @@ export const ListingContent: React.FC<Props> = ({ data }) => {
           <Description text={data.description} />
         </ContentBlock>
         <ContentBlock>
-          <Map />
+          <Map coordinates={data.location.coords} />
         </ContentBlock>
         <ContentBlock>
           <LandlordProfile landlord={data.landlord} />
