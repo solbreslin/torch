@@ -44,6 +44,7 @@ export const ListingActions: React.FC<Props> = ({ id }) => {
         />{' '}
         {isSaved ? <span>Saved</span> : <span>Save</span>}
       </Button>
+
       <Button variant={'icon'} onClick={handleShare}>
         <Share size={16} />
         <span>Share</span>

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import ButtonStyled from './Button.styled';
 
-export type variant = 'primary' | 'secondary' | 'icon';
+export type variant = 'primary' | 'secondary' | 'icon' | 'link';
 
 type Props = {
   children: ReactNode;

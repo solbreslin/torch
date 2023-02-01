@@ -14,6 +14,23 @@
     "coords": [
       51.54827,
       -0.096429
+    ],
+    "local_transport": [
+      {
+        "types": ["rail"],
+        "station": "Canonbury",
+        "distance_minutes": 4
+      },
+      {
+        "types": ["underground", "rail"],
+        "station": "Highbury & Islington",
+        "distance_minutes": 8
+      },
+      {
+        "types": ["rail"],
+        "station": "Essex Road",
+        "distance_minutes": 14
+      }
     ]
   },
   "landlord": {
@@ -41,8 +58,7 @@
     "garden": true,
     "parking": true,
     "fireplace": true,
-    "furnishing": "At tenant choice",
-    "EPC Rating": "C"
+    "epc_rating": "C"
   },
   "availability": {
     "start_date": "2023-01-31",
@@ -50,20 +66,20 @@
     "min_tenancy_unit": "month"
   },
   "feature_image": {
-    "src": "//d36pgh4m67wnlt.cloudfront.net/listings/1606883/o_1gnfkfhlobdd1uii1oh71vjv75d1.JPG",
+    "src": "https://d36pgh4m67wnlt.cloudfront.net/listings/1606883/o_1gnfkfhlobdd1uii1oh71vjv75d1.JPG",
     "alt": "Image of house with a better description"
   },
   "images": [
     {
-      "src": "//d36pgh4m67wnlt.cloudfront.net/listings/1606883/o_1gnfkffq61tfp1dtqb1gh018c00.JPG",
+      "src": "https://d36pgh4m67wnlt.cloudfront.net/listings/608118/o_1dqij9vggma1e361doigc3l8vp.JPG",
       "alt": "Image of house with a better description"
     },
     {
-      "src": "//d36pgh4m67wnlt.cloudfront.net/listings/608118/o_1dqij9vggt061afkaq27n01itbm.JPG",
+      "src": "https://d36pgh4m67wnlt.cloudfront.net/listings/1606883/o_1gnfi6hgo1kf41ehtfgn11lptjh1.JPG",
       "alt": "Image of house with a better description"
     },
     {
-      "src": "//d36pgh4m67wnlt.cloudfront.net/listings/608118/o_1dqij9vggthl1tfp5unltaroo.JPG",
+      "src": "https://d36pgh4m67wnlt.cloudfront.net/listings/1606883/o_1gnfi70jt5pblqn1rka19s1q3sb.JPG",
       "alt": "Image of house with a better description"
     }
   ],

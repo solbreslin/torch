@@ -1,5 +1,8 @@
 import React from 'react';
-import { OverviewStyled } from './Overview.styled';
+import {
+  AvailabilityOverviewStyled,
+  PropertyOverviewStyled,
+} from './Overview.styled';
 import {
   Armchair,
   Bathtub,
@@ -9,6 +12,7 @@ import {
   Users,
   UsersThree,
 } from 'phosphor-react';
+import { addOrdinalSuffix } from '../../../utils';
 
 const ICON_SIZE = 21;
 
@@ -57,13 +61,16 @@ const formatISODateStringToString = (dateString: string) => {
 };
 
 export const Overview: React.FC<Props> = ({ availability, property }) => {
-  const availableDate = formatISODateStringToString(availability.start_date);
-
   const maxTenants = property.max_tenants;
 
+  const availableDate = formatISODateStringToString(availability.start_date);
+
+  let minimumTenancyCopy = `${availability.min_tenancy} ${availability.min_tenancy_unit}`;
+  if (availability.min_tenancy > 1) minimumTenancyCopy += 's';
+
   return (
-    <OverviewStyled>
-      <div>
+    <>
+      <PropertyOverviewStyled>
         <span>
           <Bed size={ICON_SIZE} />
           {property.bedrooms} bed
@@ -97,14 +104,14 @@ export const Overview: React.FC<Props> = ({ availability, property }) => {
           <Armchair size={ICON_SIZE} />
           Furnished
         </span>
-      </div>
+      </PropertyOverviewStyled>
 
-      <div>
-        <span>
-          <CalendarCheck size={ICON_SIZE} />
-          Available from {availableDate}
-        </span>
-      </div>
-    </OverviewStyled>
+      <AvailabilityOverviewStyled>
+        <span>Available from</span>
+        <span>{availableDate}</span>
+        <span>Minimum tenancy</span>
+        <span>{minimumTenancyCopy}</span>
+      </AvailabilityOverviewStyled>
+    </>
   );
 };

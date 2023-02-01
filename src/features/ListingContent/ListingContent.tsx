@@ -3,41 +3,62 @@ import { Description } from './Description/Description';
 import ContentBlock from '../../shared/ContentBlock/ContentBlock';
 import { Features } from './Features/Features';
 import { Overview } from './Overview/Overview';
-import { Map } from '../Map/Map';
+import { Location } from './Location/Location';
 import { LandlordProfile } from '../LandlordProfile/LandlordProfile';
 import { ListingContentStyled } from './ListingContent.styled';
 import { ListingPrice } from '../ListingPrice/ListingPrice';
+import { Flag } from 'phosphor-react';
+import { ActionText } from '../constants';
 
 type Props = {
   data: any;
 };
 
 export const ListingContent: React.FC<Props> = ({ data }) => {
+  const {
+    title,
+    property_overview,
+    availability,
+    description,
+    features,
+    location,
+    landlord,
+    price,
+  } = data;
+
   return (
     <ListingContentStyled>
       <div>
-        <h1>{data.title}</h1>
+        <h1>{title}</h1>
+
         <ContentBlock>
-          <Overview
-            property={data.property_overview}
-            availability={data.availability}
-          />
+          <Overview property={property_overview} availability={availability} />
         </ContentBlock>
-        <ContentBlock>
-          <Features data={data.features} />
+
+        <ContentBlock title={'Overview'}>
+          <Description text={description} />
         </ContentBlock>
-        <ContentBlock>
-          <Description text={data.description} />
+
+        <ContentBlock title={'Features'}>
+          <Features features={features} />
         </ContentBlock>
-        <ContentBlock>
-          <Map coordinates={data.location.coords} />
+
+        <ContentBlock title={'Location'}>
+          <Location location={location} />
         </ContentBlock>
-        <ContentBlock>
-          <LandlordProfile landlord={data.landlord} />
+
+        <ContentBlock title={'Meet the landlord'}>
+          <LandlordProfile landlord={landlord} />
         </ContentBlock>
       </div>
+
       <div>
-        <ListingPrice data={'test'} />
+        <ListingPrice price={price} />
+
+        <a href={'#'}>
+          <Flag size={16} />
+          <small>{ActionText.REPORT_LISTING}</small>
+        </a>
       </div>
     </ListingContentStyled>
   );

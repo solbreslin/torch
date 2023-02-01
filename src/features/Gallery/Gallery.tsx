@@ -17,10 +17,6 @@ type Props = {
 const Gallery: React.FC<Props> = ({ feature_image, images }) => {
   const [galleryIsOpen, setGalleryIsOpen] = useState(false);
 
-  function handleOpenGallery() {
-    setGalleryIsOpen(true);
-  }
-
   return (
     <GalleryStyled>
       <img src={feature_image.src} alt={feature_image.alt} />
@@ -30,7 +26,7 @@ const Gallery: React.FC<Props> = ({ feature_image, images }) => {
       <Button
         hasShadow={true}
         variant={'secondary'}
-        onClick={handleOpenGallery}
+        onClick={() => setGalleryIsOpen(true)}
       >
         <Image size={21} /> {ActionText.OPEN_GALLERY}
       </Button>

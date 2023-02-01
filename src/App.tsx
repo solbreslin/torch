@@ -7,19 +7,23 @@ import { RelatedListings } from './features/RelatedListings/RelatedListings';
 import { ListingPageHeader } from './features/ListingPageHeader/ListingPageHeader';
 
 function App() {
+  const { id, feature_image, images } = data;
+
   return (
     <>
       <GlobalHeader />
       <main>
+        <ListingPageHeader id={id} />
+
         <section>
-          <ListingPageHeader id={data.id} />
-
-          <Gallery feature_image={data.feature_image} images={data.images} />
-
-          <ListingContent data={data} />
-
-          <RelatedListings />
+          <Gallery feature_image={feature_image} images={images} />
         </section>
+
+        <section>
+          <ListingContent data={data} />
+        </section>
+
+        {/* TODO <RelatedListings /> */}
       </main>
     </>
   );

@@ -18,8 +18,9 @@ export const Description: React.FC<Props> = ({ text }) => {
   return (
     <DescriptionStyled hasFade={!isExpanded}>
       <div dangerouslySetInnerHTML={html}></div>
+
       {!isExpanded && (
-        <Button onClick={() => setIsExpanded(true)}>
+        <Button onClick={() => setIsExpanded(true)} variant={'link'}>
           {ActionText.EXPAND_DESCRIPTION}
         </Button>
       )}
