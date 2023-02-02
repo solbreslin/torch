@@ -8,6 +8,7 @@ import {
 import Button from '../../shared/Button/Button';
 import { Bank, CheckCircle, X } from 'phosphor-react';
 import { ActionText } from '../constants';
+import { formatPrice } from '../../utils';
 
 type Price = {
   deposit: number;
@@ -22,8 +23,6 @@ type Props = {
 };
 
 export const ListingPrice: React.FC<Props> = ({ price }) => {
-  const formatPrice = (price: number) => '£' + price.toLocaleString();
-
   return (
     <ListingPriceStyled>
       <AmountStyled>

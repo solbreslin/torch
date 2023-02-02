@@ -15,3 +15,8 @@ export const addOrdinalSuffix = (i: number) => {
 
   return i + 'th';
 };
+
+export const formatPrice = (price: number) => '£' + price.toLocaleString();
+
+export const pageTitle = (title: string, price: number) =>
+  `${title} - To rent now for ${formatPrice(price)} p/m`;

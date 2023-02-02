@@ -4,3 +4,17 @@
   font-weight: normal;
   src: local("tiempos"), url("@/assets/fonts/test-tiempos-headline-regular.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "soehne";
+  font-style: normal;
+  font-weight: normal;
+  src: local("soehne"), url("@/assets/fonts/soehne-buch.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "soehne kraftig";
+  font-style: normal;
+  font-weight: normal;
+  src: local("soehne kraftig"), url("@/assets/fonts/soehne-kraftig.woff2") format("woff2");
+}
