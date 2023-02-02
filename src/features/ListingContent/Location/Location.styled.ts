@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const LocationStyled = styled.div``;
+
 export const LocalTransportStyled = styled.div`
   padding-top: 1rem;
 `;

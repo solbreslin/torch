@@ -4,6 +4,6 @@ export const ListingActionsStyled = styled.div`
   display: flex;
   gap: 0.4rem;
 
-  // offset container padding
-  margin-right: -1rem;
+  // offset last button padding
+  margin-right: -1.5em;
 `;

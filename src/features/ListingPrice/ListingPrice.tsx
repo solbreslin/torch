@@ -23,22 +23,24 @@ type Props = {
 };
 
 export const ListingPrice: React.FC<Props> = ({ price }) => {
+  const { bills_included, pcm, pw, currency, deposit } = price;
+
   return (
     <ListingPriceStyled>
       <AmountStyled>
         <h2>
           <span className={'sr-only'}>Price</span>
-          {formatPrice(price.pcm)} <small>per month</small>
+          {formatPrice(pcm)} <small>per month</small>
         </h2>
-        <small>{formatPrice(price.pw)} per week</small>
+        <small>{formatPrice(pw)} per week</small>
       </AmountStyled>
       <hr />
       <AdditionalInfoStyled>
         <p>
-          <Bank size={21} color={'grey'} /> Deposit {formatPrice(price.deposit)}
+          <Bank size={21} color={'grey'} /> Deposit {formatPrice(deposit)}
         </p>
         <p>
-          {price.bills_included ? (
+          {bills_included ? (
             <>
               <CheckCircle size={21} fill={'green'} weight={'fill'} />
               Bills included

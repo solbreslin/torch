@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const PropertyOverviewStyled = styled.div`
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
 
   > span {
     align-items: center;
@@ -23,6 +24,6 @@ export const AvailabilityOverviewStyled = styled.div`
   padding-top: 1rem;
 
   > :nth-child(odd) {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 40%);
   }
 `;

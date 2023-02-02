@@ -7,19 +7,13 @@ import {
   Armchair,
   Bathtub,
   Bed,
-  CalendarCheck,
   User,
   Users,
   UsersThree,
 } from 'phosphor-react';
-import { addOrdinalSuffix } from '../../../utils';
+import { formatISODateStringToString } from '../../../utils';
 
 const ICON_SIZE = 21;
-
-enum PropertyType {
-  'House',
-  'Flat',
-}
 
 type PropertyOverview = {
   type: number;
@@ -42,46 +36,33 @@ type Props = {
   property: PropertyOverview;
 };
 
-const formatISODateStringToString = (dateString: string) => {
-  const dateParts = dateString.split('-');
-  const date = new Date(
-    parseInt(dateParts[0]),
-    parseInt(dateParts[1]) - 1,
-    parseInt(dateParts[2])
-  );
-
-  const options = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  };
-
-  // @ts-ignore
-  return date.toLocaleDateString('en-GB', options);
-};
-
 export const Overview: React.FC<Props> = ({ availability, property }) => {
-  const maxTenants = property.max_tenants;
+  const { start_date, min_tenancy, min_tenancy_unit } = availability;
+  const { type, bedrooms, bathrooms, furnished, max_tenants } = property;
 
-  const availableDate = formatISODateStringToString(availability.start_date);
+  const maxTenants = max_tenants;
+  const availableDate = formatISODateStringToString(start_date);
 
-  let minimumTenancyCopy = `${availability.min_tenancy} ${availability.min_tenancy_unit}`;
-  if (availability.min_tenancy > 1) minimumTenancyCopy += 's';
+  let minimumTenancyCopy = `${min_tenancy} ${min_tenancy_unit}`;
+  if (min_tenancy > 1) minimumTenancyCopy += 's';
 
   return (
     <>
       <PropertyOverviewStyled>
         <span>
+          <span className={'sr-only'}>Number of beds</span>
           <Bed size={ICON_SIZE} />
-          {property.bedrooms} bed
+          {bedrooms} bed
         </span>
 
         <span>
+          <span className={'sr-only'}>Number of bathrooms</span>
           <Bathtub size={ICON_SIZE} />
-          {property.bathrooms} bath
+          {bathrooms} bath
         </span>
 
         <span>
+          <span className={'sr-only'}>Maximum number of tenants</span>
           {maxTenants === 1 ? (
             <>
               <User size={ICON_SIZE} />
@@ -100,10 +81,12 @@ export const Overview: React.FC<Props> = ({ availability, property }) => {
           )}
         </span>
 
-        <span>
-          <Armchair size={ICON_SIZE} />
-          Furnished
-        </span>
+        {furnished && (
+          <span>
+            <Armchair size={ICON_SIZE} />
+            Furnished
+          </span>
+        )}
       </PropertyOverviewStyled>
 
       <AvailabilityOverviewStyled>

@@ -38,6 +38,6 @@ export const LandlordResponseStyled = styled.div`
   grid-template-columns: max-content auto;
 
   > :nth-child(odd) {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 40%);
   }
 `;

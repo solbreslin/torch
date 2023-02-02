@@ -9,6 +9,7 @@ import { ListingContentStyled } from './ListingContent.styled';
 import { ListingPrice } from '../ListingPrice/ListingPrice';
 import { Flag } from 'phosphor-react';
 import { ActionText } from '../constants';
+import ReportListing from './ReportListing/ReportListing';
 
 type Props = {
   data: any;
@@ -16,6 +17,7 @@ type Props = {
 
 export const ListingContent: React.FC<Props> = ({ data }) => {
   const {
+    id,
     title,
     property_overview,
     availability,
@@ -54,11 +56,7 @@ export const ListingContent: React.FC<Props> = ({ data }) => {
 
       <div>
         <ListingPrice price={price} />
-
-        <a href={'#'}>
-          <Flag size={16} />
-          <small>{ActionText.REPORT_LISTING}</small>
-        </a>
+        <ReportListing id={id} />
       </div>
     </ListingContentStyled>
   );

@@ -25,20 +25,22 @@ type Props = {
 };
 
 export const LandlordProfile: React.FC<Props> = ({ landlord }) => {
+  const { name, profile_url, response, verified } = landlord;
+
   const responseTimeCopy =
-    landlord.response.time_minutes < 60
+    response.time_minutes < 60
       ? 'within an hour'
-      : `within ${Math.round(landlord.response.time_minutes / 60)} hours`;
+      : `within ${Math.round(response.time_minutes / 60)} hours`;
 
   return (
     <LandlordProfileStyled>
       <LandlordAvatarStyled>
-        <img src={landlord.profile_url} alt={'Profile of' + landlord.name} />
+        {profile_url && <img src={profile_url} alt={'Profile of' + name} />}
       </LandlordAvatarStyled>
       <div>
         <LandlordNameStyled>
-          {landlord.name}
-          {landlord.verified && (
+          {name}
+          {verified && (
             <span title={'Verified'}>
               <ShieldCheck size={18} weight={'fill'} fill={'green'} />
               <small className="sr-only">Verified</small>
@@ -48,7 +50,7 @@ export const LandlordProfile: React.FC<Props> = ({ landlord }) => {
       </div>
       <LandlordResponseStyled>
         <span>Response rate</span>
-        <span>{landlord.response.rate}%</span>
+        <span>{response.rate}%</span>
         <span>Response time</span>
         <span>{responseTimeCopy}</span>
       </LandlordResponseStyled>

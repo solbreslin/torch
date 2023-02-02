@@ -4,8 +4,11 @@
   --or-font-serif: "tiempos";
   --or-color-primary: #0b60a9;
   --or-color-primary-light: #9bbfde;
+  --or-color-primary-dark: #08487e;
 
   --or-elevation: 0 4px 8px 2px rgba(0, 0, 0, 10%);
+  --or-outline-style: 2px dashed var(--or-color-primary);
+  --or-transition-style: .125s ease-out;
 }
 
 * {
@@ -71,10 +74,6 @@ h4 {
   font-family: var(--or-font-sans-medium);
 }
 
-.leaflet-container {
-  height: 400px;
-}
-
 a {
   color: currentColor;
   font-size: 1rem;
@@ -83,6 +82,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus-within {
+  outline: var(--or-outline-style);
 }
 
 b {
@@ -101,4 +104,8 @@ b {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important;
+}
+
+.leaflet-container {
+  height: 400px;
 }

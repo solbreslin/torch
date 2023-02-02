@@ -28,7 +28,9 @@ type Props = {
 };
 
 export const Location: React.FC<Props> = ({ location }) => {
-  const sortedTransportOptions = location.local_transport.sort((a, b) =>
+  const { local_transport, coords } = location;
+
+  const sortedTransportOptions = local_transport.sort((a, b) =>
     a.distance_minutes > b.distance_minutes ? 1 : 0
   );
 
@@ -50,17 +52,21 @@ export const Location: React.FC<Props> = ({ location }) => {
 
   return (
     <LocationStyled>
-      <Map coordinates={location.coords} />
+      <Map coordinates={coords} />
+
       <LocalTransportStyled>
         <h4>Local Transport</h4>
+
         <TransportOptionsStyled>
-          {sortedTransportOptions.map((option) => (
-            <TransportOptionStyled key={option.station}>
-              <span>{...transportIcons(option.types)}</span>
-              <span>{option.station}</span>
-              <span>{option.distance_minutes} minute walk</span>
-            </TransportOptionStyled>
-          ))}
+          {sortedTransportOptions.map(
+            ({ types, station, distance_minutes }) => (
+              <TransportOptionStyled key={station}>
+                <span>{...transportIcons(types)}</span>
+                <span>{station}</span>
+                <span>{distance_minutes} minute walk</span>
+              </TransportOptionStyled>
+            )
+          )}
         </TransportOptionsStyled>
       </LocalTransportStyled>
     </LocationStyled>
