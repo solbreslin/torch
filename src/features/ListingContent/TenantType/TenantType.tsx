@@ -36,8 +36,6 @@ const TenantType: React.FC<Props> = ({ tenant }) => {
   const accepted = preferenceList.filter((pref) => pref[1].value);
   const notAccepted = preferenceList.filter((pref) => !pref[1].value);
 
-  console.log(accepted[0][1].display);
-
   return (
     <TenantTypesStyled>
       <ul>
