@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ContentBlockStyled = styled.div`
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 3rem;
 
   &:not(:last-child) {
     border-bottom: 1px solid hsl(0, 0%, 80%);

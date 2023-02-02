@@ -10,6 +10,7 @@ import { ListingPrice } from '../ListingPrice/ListingPrice';
 import { Flag } from 'phosphor-react';
 import { ActionText } from '../constants';
 import ReportListing from './ReportListing/ReportListing';
+import TenantType from './TenantType/TenantType';
 
 type Props = {
   data: any;
@@ -26,6 +27,7 @@ export const ListingContent: React.FC<Props> = ({ data }) => {
     location,
     landlord,
     price,
+    tenant_type,
   } = data;
 
   return (
@@ -49,8 +51,16 @@ export const ListingContent: React.FC<Props> = ({ data }) => {
           <Location location={location} />
         </ContentBlock>
 
+        <ContentBlock title={'Tenant preference'}>
+          <TenantType tenant={tenant_type} />
+        </ContentBlock>
+
         <ContentBlock title={'Meet the landlord'}>
           <LandlordProfile landlord={landlord} />
+        </ContentBlock>
+
+        <ContentBlock>
+          <small>Property reference {id}</small>
         </ContentBlock>
       </div>
 

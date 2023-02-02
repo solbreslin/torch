@@ -1,5 +1,5 @@
 {
-  "id": "1",
+  "id": "1606883",
   "active": true,
   "title": "1 Bed Flat, Highbury New Park, N5",
   "price": {
@@ -49,10 +49,27 @@
     "max_tenants": 2,
     "furnished": true
   },
-  "tenants": {
-    "students_allowed": true,
-    "pets_allowed": true,
-    "smokers_allowed": false
+  "tenant_type": {
+    "students": {
+      "display": "Students",
+      "value": true
+    },
+    "families": {
+      "display": "Families",
+      "value": true
+    },
+    "pets": {
+      "display": "Pets",
+      "value": true
+    },
+    "smokers": {
+      "display": "Smokers",
+      "value": false
+    },
+    "dss_lha": {
+      "display": "DSS/LHA covers rent",
+      "value": false
+    }
   },
   "features": {
     "garden": true,
