@@ -1,21 +1,21 @@
-import React from 'react';
-import { GlobalHeader } from './features/GlobalHeader/GlobalHeader';
-import Home from './sections/Home/Home';
-import About from './sections/About/About';
-import Survey from './sections/Survey/Survey';
-import data from './data/data.json';
+import HomePage from './routes/Home/Home';
+import AboutPage from './routes/About/About';
 
-function App() {
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './shared/Layout/Layout';
+
+ const App = () => {
   return (
-    <>
-      <GlobalHeader />
-      <main>
-        <Home />
-        <About />
-       
-      </main>
-    </>
+    <main>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+         
+        </Route>
+      </Routes>
+    </main>
   );
-}
+};
 
-export default App;
+export default App

@@ -1,6 +1,6 @@
 import { AboutStyled } from './About.styled';
 
-const About = () => (
+const AboutSection = () => (
   <AboutStyled>
     <section id={'about'}>
       <h3>
@@ -25,4 +25,4 @@ const About = () => (
   </AboutStyled>
 );
 
-export default About;
+export default AboutSection;

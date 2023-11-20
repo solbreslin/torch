@@ -1,9 +1,13 @@
 import React, { ReactNode } from 'react';
+import { GlobalHeader } from './../../features/GlobalHeader/GlobalHeader';
 
-type Props = {
-  children: ReactNode;
-};
+import { Outlet } from 'react-router-dom';
 
-export const Layout: React.FC<Props> = ({ children }) => {
-  return <div>{children}</div>;
+export const Layout = () => {
+  return (
+    <>
+      <GlobalHeader />
+      <Outlet />
+    </>
+  );
 };

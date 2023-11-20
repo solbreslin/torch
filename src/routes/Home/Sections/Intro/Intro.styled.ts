@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import img from "@/assets/images/rw.jpg"
 
-export const HomeStyled = styled.div`
+export const IntroStyled = styled.div`
   background:linear-gradient(0deg, rgba(41, 62, 145, .9), rgba(41, 62, 145, .9)),url(${img});
   background-size: cover;
   background-color: black;

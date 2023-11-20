@@ -1,13 +1,12 @@
+import { Link } from 'react-router-dom';
 import { GlobalHeaderStyled } from './GlobalHeader.styled';
 
 export const GlobalHeader = () => (
   <GlobalHeaderStyled>
-    <a className={'brand'} href={'#'}>
-      Torch
-    </a>
+   <Link className='brand' to={`/`}>Torch</Link>
     <nav>
-      <a href={'#about'}>About</a>
-      <a href={'#contact'}>Contact</a>
+      <Link to={`about`}>About</Link>
+
       <a className={'special'} href={'#'}>
         Lead the way
       </a>
