@@ -1,4 +1,3 @@
-import { ActionText } from '../constants';
 import { CaretLeft } from 'phosphor-react';
 import { BackLinkStyled } from './BackLink.styled';
 

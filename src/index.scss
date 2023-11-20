@@ -1,14 +1,16 @@
 :root {
-  --or-font-sans: "soehne";
-  --or-font-sans-medium: "soehne kraftig";
+  --or-font-sans: "future";
+  --or-font-sans-medium: "future";
   --or-font-serif: "tiempos";
   --or-color-primary: #0b60a9;
   --or-color-primary-light: #9bbfde;
   --or-color-primary-dark: #08487e;
 
-  --or-elevation: 0 4px 8px 2px rgba(0, 0, 0, 10%);
-  --or-outline-style: 2px dashed var(--or-color-primary);
-  --or-transition-style: .125s ease-out;
+  --to-pink:#dbc5d1;
+  --to-red: #f9550d;
+  --to-blue: #293e91;
+  --to-blue-light:#4a56a4;
+  --to-black: #142137;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
   margin: 0;
 }
 
-main {
+section {
   margin: 0 auto;
   max-width: 1080px;
   padding: 0 1rem 4rem;
@@ -60,7 +62,7 @@ h3 {
 
 h1 {
   color: hsl(0, 0%, 25%);
-  font-family: var(--or-font-serif);
+
   font-size: 1.999rem;
 }
 
