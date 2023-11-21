@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { GlobalHeaderStyled } from './GlobalHeader.styled';
+import { HeaderStyled } from './Header.styled';
 
-export const GlobalHeader = () => (
-  <GlobalHeaderStyled>
+const Header = () => (
+  <HeaderStyled>
    <Link className='brand' to={`/`}>Torch</Link>
     <nav>
       <Link to={`about`}>About</Link>
@@ -11,5 +11,7 @@ export const GlobalHeader = () => (
         Lead the way
       </a>
     </nav>
-  </GlobalHeaderStyled>
+  </HeaderStyled>
 );
+
+export default Header

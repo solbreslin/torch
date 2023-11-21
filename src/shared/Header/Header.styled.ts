@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const GlobalHeaderStyled = styled.header`
+export const HeaderStyled = styled.header`
   background: var(--to-blue);
   display: flex;
   justify-content: space-between;

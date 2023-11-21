@@ -1,13 +1,16 @@
 import React, { ReactNode } from 'react';
-import { GlobalHeader } from './../../features/GlobalHeader/GlobalHeader';
+import Header  from '../Header/Header';
+import Footer  from '../Footer/Footer';
 
 import { Outlet } from 'react-router-dom';
 
 export const Layout = () => {
   return (
     <>
-      <GlobalHeader />
-      <Outlet />
+      <Header /> 
+
+        <Outlet />
+      <Footer />
     </>
   );
 };
