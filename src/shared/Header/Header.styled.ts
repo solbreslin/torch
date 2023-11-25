@@ -33,17 +33,17 @@ export const HeaderStyled = styled.header`
   .burger-menu {
     display: none;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
 
     &.active {
       span:first-of-type {
-        top: 5px;
+        top: 23px;
         transform: rotate(45deg);
       }
 
       span:last-of-type {
-        bottom: 5px;
+        bottom: 23px;
         transform: rotate(-45deg);
       }
     }
@@ -52,31 +52,33 @@ export const HeaderStyled = styled.header`
       border: none;
       background: none;
       cursor: pointer;
-      margin: auto;
       position: absolute;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      width: 22px;
-      height: 12px;
+      width: 100%;
+      padding: 0;
     }
 
     span {
       position: absolute;
       display: block;
-      width: 100%;
+      width: 22px;
       height: 2px;
       background-color: var(--onyx);
       border-radius: 1px;
       transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+      left: 0;
+      right: 0;
+      margin: auto;
 
       &:first-of-type {
-        top: 0;
+        top: 18px;
       }
 
       &:last-of-type {
-        bottom: 0;
+        bottom: 18px;
       }
     }
   }
