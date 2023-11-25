@@ -11,6 +11,12 @@
   --to-blue: #293e91;
   --to-blue-light:#4a56a4;
   --to-black: #142137;
+
+  --onyx: hsla(197, 7%, 21%, 1);
+  --saffron: hsla(45, 86%, 63%, 1);
+  --coral: hsla(18, 100%, 66%, 1);
+  --sky-blue: hsla(187, 37%, 63%, 1);
+  --ghost-white: hsla(240, 100%, 99%, 1);
 }
 
 * {
@@ -22,7 +28,7 @@ html {
 }
 
 body {
-  color: hsl(0, 0%, 20%);
+  color: var(--onyx);
   font: 1rem/1.45 var(--or-font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -92,8 +98,8 @@ a:focus-visible {
   outline: var(--or-outline-style);
 }
 
-b {
-  font-weight: 600;
+strong {
+  font-weight: 700;
 }
 
 ul {
@@ -102,9 +108,6 @@ ul {
   padding: 0;
 }
 
-p {
-  letter-spacing: .01em;
-}
 
 .sr-only {
   border: 0 !important;

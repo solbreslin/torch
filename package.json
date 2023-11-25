@@ -10,6 +10,7 @@
     "gen": "sh -c 'npx agrippa gen $0 --dest $1'"
   },
   "dependencies": {
+    "@typeform/embed-react": "^3.9.0",
     "leaflet": "^1.9.3",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",

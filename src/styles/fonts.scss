@@ -19,6 +19,13 @@
   src: local("soehne kraftig"), url("@/assets/fonts/soehne-kraftig.woff2") format("woff2");
 }
 
+ @font-face {
+   font-family: "future";
+   src: local("future"), url("@/assets/fonts/test-the-future-bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+ }
+
 // @font-face {
 //   font-family: "future";
 //   src: local("future"), url("@/assets/fonts/test-the-future-black.woff2") format("woff2");
@@ -68,12 +75,12 @@
 //   font-style: italic;
 // }
 
-// @font-face {
-//   font-family: "future";
-//   src: local("future"), url("@/assets/fonts/test-the-future-medium.woff2") format("woff2");
-//   font-weight: 500;
-//   font-style: normal;
-// }
+ @font-face {
+   font-family: "future";
+   src: local("future"), url("@/assets/fonts/test-the-future-medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+ }
 
 // @font-face {
 //   font-family: "future";

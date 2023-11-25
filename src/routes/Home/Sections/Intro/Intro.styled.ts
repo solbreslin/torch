@@ -1,31 +1,29 @@
 import styled from 'styled-components';
-import img from "@/assets/images/rw.jpg"
+import img from '@/assets/images/rw.jpg';
 
 export const IntroStyled = styled.div`
-  background:linear-gradient(0deg, rgba(41, 62, 145, .9), rgba(41, 62, 145, .9)),url(${img});
-  background-size: cover;
-  background-color: black;
-  align-items: center;
+  // background: linear-gradient(0deg, var(--sky-blue), var(--sky-blue)),
+  //   url(${img});
+  align-items: flex-end;
+  background-color: var(--sky-blue);
   display: flex;
-  justify-content: space-between;
-  min-height: 70vh;
+
+  min-height: 40vh;
+  padding-bottom: 4rem;
 
   section {
-
     padding: 0;
   }
 
   h1 {
-    color: white;
-    font-family: var(--or-font-sans-medium);
-    font-size: 3rem;
-    letter-spacing: 0.025em;
-    line-height: 1;
+    font-size: 2rem;
     margin: 0;
-    text-transform: uppercase;
+    display: none;
+  }
 
-    span {
-      color: white;
-    }
+  p {
+    max-width: 45ch;
+    font-size: 1.45rem;
+    line-height: 1.3;
   }
 `;

@@ -8,7 +8,7 @@ export const AboutStyled = styled.div`
   min-height: 70vh;
 
   section {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 0;
