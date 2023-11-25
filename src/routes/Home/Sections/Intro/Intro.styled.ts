@@ -8,7 +8,7 @@ export const IntroStyled = styled.div`
   background-color: var(--sky-blue);
   display: flex;
 
-  min-height: 40vh;
+  min-height: 60vh;
   padding-bottom: 4rem;
 
   section {

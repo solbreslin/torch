@@ -26,12 +26,14 @@
    font-style: normal;
  }
 
-// @font-face {
-//   font-family: "future";
-//   src: local("future"), url("@/assets/fonts/test-the-future-black.woff2") format("woff2");
-//   font-weight: 900;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "future";
+  src: local("future"), url("@/assets/fonts/test-the-future-black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 
 // @font-face {
 //   font-family: "future";

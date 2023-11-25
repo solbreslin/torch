@@ -90,13 +90,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-a:focus-visible {
-  outline: var(--or-outline-style);
-}
 
 strong {
   font-weight: 700;
