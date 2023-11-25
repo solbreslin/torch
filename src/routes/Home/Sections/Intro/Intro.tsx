@@ -9,8 +9,9 @@ const IntroSection = () => (
         <br /> ignite change
       </h1>
       <p>
-        We created Torch to show what it’s like to work somewhere. Not just for
-        the majority - <strong>for everybody</strong>.
+        We created Torch to show what it’s like to work somewhere.
+        <br />
+        Not just for the majority - <strong>for everybody</strong>.
       </p>
     </section>
   </IntroStyled>

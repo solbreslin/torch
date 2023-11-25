@@ -17,6 +17,13 @@
   --coral: hsla(18, 100%, 66%, 1);
   --sky-blue: hsla(187, 37%, 63%, 1);
   --ghost-white: hsla(240, 100%, 99%, 1);
+  --steel-blue: hsla(203, 61%, 45%, 1);
+  --chefchaouen-blue: hsla(219, 73%, 61%, 1);
+  --delft-blue: hsla(240, 26%, 35%, 1);
+  --night: hsla(109, 33%, 6%, 1);
+  --egg-shell: hsla(47, 44%, 92%, 1);
+
+
 }
 
 * {
@@ -59,30 +66,8 @@ p {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.3;
-  margin-bottom: 1.38rem;
-}
 
-h1 {
-  color: hsl(0, 0%, 25%);
 
-  font-size: 1.999rem;
-}
-
-h2,
-h3 {
-  font-family: var(--or-font-sans-medium);
-  font-size: 1.414rem;
-  letter-spacing: .01em;
-}
-
-h4 {
-  font-family: var(--or-font-sans-medium);
-  letter-spacing: .01em;
-}
 
 a {
   color: currentColor;

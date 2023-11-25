@@ -1,11 +1,11 @@
 import { AboutStyled } from './About.styled';
+import React from 'react';
 
 const AboutSection = () => (
   <AboutStyled>
-    <section id={'about'}>
+    <section>
       <h3>
-        We transform your workplace experiences into robust, undeniable data:
-        <br /> <br />
+        We transform your workplace experiences into robust, undeniable data:{' '}
         <span>The good, the bad and the nuanced</span>
       </h3>
       <div>
@@ -20,6 +20,30 @@ const AboutSection = () => (
           be uncovered.
         </p>
         <p>Complete the below survey to join us…..</p>
+      </div>
+      <div className={'stats'}>
+        <div className={'stat'}>
+          <span>15%</span>
+          <span>of all Fortune 500 companies have female CEOs</span>
+        </div>
+        <div className={'stat'}>
+          <span>75%</span>
+          <span>
+            of companies are more likely to have a CEO named David than a CEO
+            who is a woman.
+          </span>
+        </div>
+
+        <div className={'stat'}>
+          <span>46%</span>
+          <span>
+            of workers experience discrimination and harassment each year
+          </span>
+        </div>
+        <div className={'stat'}>
+          <span>70%</span>
+          <span>of Google’s global workforce is male</span>
+        </div>
       </div>
     </section>
   </AboutStyled>

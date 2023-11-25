@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
   align-items: center;
-  background-color: var(--ghost-white);
+  background-color: var(--delft-blue);
   display: flex;
 
   .mobile-cta {
