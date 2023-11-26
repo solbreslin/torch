@@ -12,12 +12,14 @@ export const IntroStyled = styled.div`
   }
 
   h1 {
+    color: white;
     font-size: 2rem;
+    font-weight: 700;
     margin: 0;
-    display: none;
   }
 
   p {
+    display: none;
     color: white;
     max-width: 45ch;
     font-size: 1.45rem;
