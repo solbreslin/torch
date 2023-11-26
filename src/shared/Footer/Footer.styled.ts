@@ -27,6 +27,10 @@ export const FooterStyled = styled.footer`
     grid-area: contact;
     margin-bottom: 1rem;
     max-width: 30ch;
+
+    a {
+      white-space: nowrap;
+    }
   }
 
   .nav-1 {

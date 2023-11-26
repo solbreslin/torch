@@ -16,7 +16,12 @@ const IntroSection = () => (
       <img srcSet={srcSet} alt={'Abstract image of a data center'} />
     </BackgroundImage>
     <section>
-      <h1>Collective voices ignite change</h1>
+      <h1 style={{ display: 'none' }}>Collective voices ignite change</h1>
+      <h1>
+        Together we&apos;re louder
+        <br />
+        Torch fuels the conversation for change
+      </h1>
       <p>
         We created Torch to show what it’s like to work somewhere.
         <br />

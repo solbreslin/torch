@@ -4,7 +4,7 @@ export const IntroStyled = styled.div`
   align-items: flex-end;
   display: flex;
   min-height: 50vh;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   position: relative;
 
   section {
@@ -15,6 +15,7 @@ export const IntroStyled = styled.div`
     color: white;
     font-size: 2rem;
     font-weight: 700;
+    line-height: 1.2;
     margin: 0;
   }
 
