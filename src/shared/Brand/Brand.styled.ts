@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 export const Root = styled(Link)`
-  color: white;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;

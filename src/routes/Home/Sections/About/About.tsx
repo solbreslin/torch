@@ -1,5 +1,6 @@
 import { AboutStyled } from './About.styled';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => (
   <AboutStyled>
@@ -14,17 +15,14 @@ const AboutSection = () => (
           platform that will empower employee decision-making, highlight
           exceptional companies and give insight into what really matters.
         </p>
-        <p>
-          We are looking to validate our belief that people have a desire to
-          share their experiences and that from these experiences new data can
-          be uncovered.
-        </p>
-        <p>Complete the below survey to join us…..</p>
       </div>
+
       <div className={'stats'}>
         <div className={'stat'}>
-          <span>15%</span>
-          <span>of all Fortune 500 companies have female CEOs</span>
+          <span>46%</span>
+          <span>
+            of workers experience discrimination and harassment each year
+          </span>
         </div>
         <div className={'stat'}>
           <span>75%</span>
@@ -33,17 +31,24 @@ const AboutSection = () => (
             who is a woman.
           </span>
         </div>
-
-        <div className={'stat'}>
-          <span>46%</span>
-          <span>
-            of workers experience discrimination and harassment each year
-          </span>
-        </div>
         <div className={'stat'}>
           <span>70%</span>
           <span>of Google’s global workforce is male</span>
         </div>
+      </div>
+
+      <div>
+        <p>
+          We are looking to validate our belief that people have a desire to
+          share their experiences and that from these experiences new data can
+          be uncovered.
+        </p>
+        <p>Complete our survey to join us…..</p>
+        <p>
+          <Link to={'/survey'} className={'primary'}>
+            Lead the way
+          </Link>
+        </p>
       </div>
     </section>
   </AboutStyled>

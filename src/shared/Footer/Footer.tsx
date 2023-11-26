@@ -11,7 +11,7 @@ const Footer = () => (
           investors who want to make a difference.
         </p>
         <p>
-          If that’s you, email us on{' '}
+          If that’s you, email us at{' '}
           <a href={'mailto:hello@the-torch.io'}>
             <strong>hello@the-torch.io</strong>
           </a>

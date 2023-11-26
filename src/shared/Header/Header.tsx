@@ -46,7 +46,7 @@ const Header = () => {
       <Brand />
       <Nav isNavVisible={isNavVisible} toggleNav={toggleNav} />
       <Link to={`survey`} className={'mobile-cta primary'}>
-        Lead the way
+        Take the survey
       </Link>
     </HeaderStyled>
   );

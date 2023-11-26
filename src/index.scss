@@ -1,30 +1,16 @@
 :root {
   --or-font-sans: "future";
   --or-font-sans-medium: "future";
-  --or-font-serif: "tiempos";
-  --or-color-primary: #0b60a9;
-  --or-color-primary-light: #9bbfde;
-  --or-color-primary-dark: #08487e;
 
-  --to-pink:#dbc5d1;
-  --to-red: #f9550d;
-  --to-blue: #293e91;
-  --to-blue-light:#4a56a4;
-  --to-black: #142137;
+  --coral: #FF784F;
+  --charcoal: #3A4454;
+  --orange: #F85E00;
+  --uranian-blue: #B5E2FA;
+  --cream: #FFFECB;
 
-  --onyx: hsla(197, 7%, 21%, 1);
-  --saffron: hsla(45, 86%, 63%, 1);
-  --coral: hsla(18, 100%, 66%, 1);
-  --sky-blue: hsla(187, 37%, 63%, 1);
-  --ghost-white: hsla(240, 100%, 99%, 1);
-  --steel-blue: hsla(203, 61%, 45%, 1);
-  --chefchaouen-blue: hsla(219, 73%, 61%, 1);
-  --delft-blue: hsla(240, 26%, 35%, 1);
-  --night: hsla(109, 33%, 6%, 1);
-  --egg-shell: hsla(47, 44%, 92%, 1);
-  --federal-blue: hsla(254, 88%, 20%, 1);
-
-
+  --primary: var(--coral);
+  --intro-bg-color: var(--uranian-blue);
+  --header-bg-color: var(--uranian-blue);
 }
 
 * {
@@ -36,7 +22,7 @@ html {
 }
 
 body {
-  color: var(--onyx);
+  color: var(--charcoal);
   font: 1rem/1.45 var(--or-font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;

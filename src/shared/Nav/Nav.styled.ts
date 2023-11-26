@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Root = styled.nav`
   display: flex;
-  background: var(--federal-blue);
+  background: var(--header-bg-color);
   flex-direction: column;
   height: calc(100vh - var(--header-height)); // fallback
   height: calc(100dvh - var(--header-height));
@@ -37,7 +37,6 @@ export const Root = styled.nav`
 `;
 
 export const StyledLink = styled(Link)<{ index: number }>`
-  color: var(--ghost-white);
   font-size: 2.5rem;
   opacity: 0;
   padding: 0.5rem;

@@ -1,29 +1,47 @@
 import styled from 'styled-components';
 
-export const IntroStyled = styled.div`
+export const IntroStyled = styled.div<{ scroll: number }>`
   align-items: flex-end;
+  background-color: var(--intro-bg-color);
   display: flex;
-  min-height: 50vh;
-  padding-bottom: 2rem;
+  min-height: calc(100vh - var(--header-height));
+  overflow: hidden;
+
   position: relative;
 
+  &:before {
+    aspect-ratio: 1/1;
+    background-color: var(--primary);
+    border-radius: 9999px;
+    bottom: 0;
+    content: '';
+    filter: blur(50px);
+    height: 50vmin;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: ${({ scroll }) =>
+      `translate3d(0, calc(${scroll / 3}px - var(--header-height)), 0)`};
+  }
+
   section {
+    max-width: 70ch;
     position: relative;
   }
 
   h1 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 2rem;
   }
 
   p {
-    display: none;
-    color: white;
     max-width: 45ch;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     line-height: 1.3;
   }
 `;

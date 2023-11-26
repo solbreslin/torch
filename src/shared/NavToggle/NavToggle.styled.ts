@@ -36,7 +36,7 @@ export const Root = styled.div`
     display: block;
     width: 22px;
     height: 3px;
-    background-color: var(--ghost-white);
+    background-color: var(--charcoal);
     border-radius: 1px;
     transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
     left: 0;
