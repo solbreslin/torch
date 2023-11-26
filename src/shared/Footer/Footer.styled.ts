@@ -6,7 +6,7 @@ export const FooterStyled = styled.footer`
   > div {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 2rem 1rem 4rem;
+    padding: 2rem 1rem 1rem;
     width: calc(100% - 2rem);
     display: grid;
     grid-gap: 1rem;

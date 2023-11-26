@@ -8,7 +8,6 @@ export const AboutStyled = styled.div`
     display: block;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 0;
   }
 
   h3 {
