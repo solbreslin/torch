@@ -1,3 +1,5 @@
 import styled from 'styled-components';
 
-export const Root = styled.div``;
+export const Root = styled.div`
+  padding: 4rem 0;
+`;
