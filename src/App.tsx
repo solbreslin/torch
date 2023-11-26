@@ -5,6 +5,7 @@ import AboutPage from './routes/About/About';
 import SurveyPage from './routes/Survey/Survey';
 
 import { Layout } from './shared/Layout/Layout';
+import PrivacyPage from './routes/Privacy/Privacy';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/survey" element={<SurveyPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Route>
       </Routes>
     </main>
