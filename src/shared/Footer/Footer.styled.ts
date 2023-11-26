@@ -17,7 +17,7 @@ export const FooterStyled = styled.footer`
       grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1000px) {
       grid-template-areas: 'contact nav1 nav2' 'l l l';
       grid-template-columns: 2fr 1fr 1fr;
     }

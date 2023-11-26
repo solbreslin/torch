@@ -53,7 +53,11 @@ export const StyledLink = styled(Link)<{ index: number }>`
 
   @media (min-width: 768px) {
     font-size: 1rem;
+    opacity: 1;
     padding: 1rem;
+    transform: none;
+    transition: none;
+    transition-delay: 0s;
 
     &.is-mobile {
       display: none;

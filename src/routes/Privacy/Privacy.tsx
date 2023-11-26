@@ -5,7 +5,11 @@ const PrivacyPage = () => {
   return (
     <Root>
       <h1>Privacy Policy</h1>
-      <h5>Last updated: 17/11/2023</h5>
+      <p className={'m-4'}>
+        <small>
+          Last updated: <time dateTime={'2023-11-17'}>17/11/2023</time>
+        </small>
+      </p>
       <h3>Data Collection</h3>
       <p>
         The Torch survey collects information regarding personal experiences and
@@ -59,7 +63,7 @@ const PrivacyPage = () => {
       <h3>Contact Information</h3>
       <p>
         For any questions or concerns regarding this privacy policy or the
-        handling of personal information, participants can contact us at
+        handling of personal information, participants can contact us at{' '}
         <a href={'mailto:hello@the-torch.io'}>hello@the-torch.io</a>
       </p>
       <h3>Acknowledgement</h3>
