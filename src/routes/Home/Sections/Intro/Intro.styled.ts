@@ -13,7 +13,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     font-size: 3rem;
     font-weight: 500;
     line-height: 1.1;
-    min-height: 60vh;
+    min-height: calc(100vh - var(--header-height));
     place-content: center;
     position: relative;
     text-align: center;
@@ -46,13 +46,13 @@ export const IntroStyled = styled.div<{ scroll: number }>`
   }
 
   div {
-    padding: 6rem 0;
+    padding: 6rem 0 0;
     position: relative;
 
     p {
       line-height: 1.35;
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
   }
 `;
