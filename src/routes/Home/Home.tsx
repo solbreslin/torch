@@ -1,13 +1,13 @@
 import React from 'react';
 
-import AboutSection from './Sections/About/About';
+import HomeContentSection from './Sections/HomeContent/HomeContent';
 import IntroSection from './Sections/Intro/Intro';
 
 const HomePage = () => {
   return (
     <>
       <IntroSection />
-      <AboutSection />
+      <HomeContentSection />
     </>
   );
 };
