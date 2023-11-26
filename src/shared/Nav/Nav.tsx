@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Root } from './Nav.styled';
+import { Root, StyledLink } from './Nav.styled';
 
 interface NavProps {
   isNavVisible: boolean;
@@ -9,12 +9,22 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ isNavVisible, toggleNav }) => (
   <Root className={isNavVisible ? 'visible' : ''}>
-    <Link to={`about`} onClick={toggleNav}>
+    <StyledLink
+      to={`about`}
+      onClick={toggleNav}
+      index={1}
+      className={isNavVisible ? 'visible' : ''}
+    >
       About
-    </Link>
-    <Link to={`survey`} className={'special'} onClick={toggleNav}>
-      Lead the way
-    </Link>
+    </StyledLink>
+    <StyledLink
+      to={`privacy`}
+      onClick={toggleNav}
+      className={`is-mobile ${isNavVisible ? 'visible' : ''}`}
+      index={2}
+    >
+      Privacy policy
+    </StyledLink>
   </Root>
 );
 

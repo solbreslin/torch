@@ -2,17 +2,15 @@ import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
   align-items: center;
-  background-color: var(--delft-blue);
+  background-color: var(--federal-blue);
   display: flex;
 
   .mobile-cta {
     margin-left: auto;
     margin-right: 0.5rem;
-  }
 
-  @media (max-width: 768px) {
-    .brand {
-      padding-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 0.5rem;
     }
   }
 `;

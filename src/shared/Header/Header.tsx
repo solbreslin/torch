@@ -14,13 +14,24 @@ const Header = () => {
 
   useEffect(() => {
     if (headerRef.current) {
-      const height = headerRef?.current?.clientHeight;
+      let height = headerRef?.current?.clientHeight;
+      height = Math.round(height);
+      headerRef.current.style.height = `${height}px`;
+
       document.documentElement.style.setProperty(
         '--header-height',
         `${height}px`
       );
     }
   }, []);
+
+  useEffect(() => {
+    if (isNavVisible) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'initial';
+    }
+  }, [isNavVisible]);
 
   return (
     <HeaderStyled ref={headerRef}>

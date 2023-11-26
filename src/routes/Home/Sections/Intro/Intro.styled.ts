@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import img from '@/assets/images/rw.jpg';
 
 export const IntroStyled = styled.div`
-  background: linear-gradient(0deg, hsla(240, 26%, 35%, 0.5), var(--delft-blue)),
+  background: linear-gradient(
+      0deg,
+      hsla(240, 26%, 35%, 0.5),
+      var(--federal-blue)
+    ),
     url(${img});
   align-items: flex-end;
   display: flex;
