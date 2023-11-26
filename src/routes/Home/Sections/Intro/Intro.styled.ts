@@ -33,7 +33,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       bottom: 0;
       content: '';
       filter: blur(30px);
-      height: 30vmin;
+      height: 40vmin;
       left: 0;
       margin: auto;
       right: 0;
@@ -41,7 +41,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       pointer-events: none;
       position: absolute;
       transform: ${({ scroll }) =>
-        `translate3d(0, ${scroll / 3}px, 0) scale(${scroll / 750 + 1})`};
+        `translate3d(0, ${scroll / 3}px, 0) scale(${scroll / 300 + 1})`};
     }
   }
 
