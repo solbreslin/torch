@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
-  background-color: var(--egg-shell);
+  background-color: var(--cream);
 
   > div {
     margin: 0 auto;
