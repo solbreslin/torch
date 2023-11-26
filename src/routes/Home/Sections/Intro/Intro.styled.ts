@@ -5,7 +5,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
   overflow: hidden;
 
   section {
-    max-width: 90ch;
+    max-width: 1200px;
   }
 
   h1 {
@@ -19,7 +19,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     text-align: center;
 
     @media screen and (min-width: 768px) {
-      font-size: 4rem;
+      font-size: 5rem;
     }
 
     span {
@@ -46,10 +46,12 @@ export const IntroStyled = styled.div<{ scroll: number }>`
   }
 
   div {
+    max-width: 60ch;
     padding: 6rem 0 0;
     position: relative;
 
     p {
+      font-family: 'soehne kraftig';
       line-height: 1.35;
       font-size: 2rem;
       margin-bottom: 0.5rem;
