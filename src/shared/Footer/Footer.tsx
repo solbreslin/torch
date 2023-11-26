@@ -24,8 +24,21 @@ const Footer = () => (
       </nav>
       <nav className={'nav-2'}>
         <h3>Follow us</h3>
-        <a href="">Instagram</a>
-        <a href="">LinkedIn</a>
+
+        <a
+          href="https://www.linkedin.com/company/torch-io"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={'https://instagram.com/thetorch.io?igshid=YzAwZjE1ZTI0Zg=='}
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          Instagram
+        </a>
       </nav>
       <p className={'l'}>Made with 🧡 in London</p>
     </div>

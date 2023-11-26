@@ -16,6 +16,6 @@ export const Root = styled.section`
 
   h3 {
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem;
   }
 `;

@@ -11,11 +11,12 @@ const Stats = () => {
         <div key={d.stat}>
           <CountUp
             enableScrollSpy={true}
+            scrollSpyOnce={true}
             end={d.number}
             duration={2}
             suffix={'%'}
           />
-          <p>{d.stat}</p>
+          <p style={{ fontSize: '1.25rem' }}>{d.stat}</p>
         </div>
       ))}
     </Root>

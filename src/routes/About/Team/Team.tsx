@@ -21,7 +21,7 @@ const Team = () => {
         <div key={d.name}>
           <img srcSet={d.srcset} alt={d.name} />
           <h3>{d.name}</h3>
-          <p>{d.bio}</p>
+          {/*<p>{d.bio}</p>*/}
         </div>
       ))}
     </Root>

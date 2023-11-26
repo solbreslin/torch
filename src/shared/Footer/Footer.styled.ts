@@ -33,6 +33,15 @@ export const FooterStyled = styled.footer`
     }
   }
 
+  nav {
+    a {
+      padding: 0.25rem 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .nav-1 {
     grid-area: nav1;
   }
