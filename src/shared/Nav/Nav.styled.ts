@@ -15,6 +15,7 @@ export const Root = styled.nav`
   transition: 0.125s ease-out;
   opacity: 0;
   pointer-events: none;
+  z-index: 1;
 
   &.visible {
     opacity: 1;

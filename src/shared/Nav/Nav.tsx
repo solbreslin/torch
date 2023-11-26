@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Root, StyledLink } from './Nav.styled';
 
 interface NavProps {

@@ -26,11 +26,18 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (isNavVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'initial';
-    }
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        document.body.style.overflow = 'initial';
+      } else {
+        document.body.style.overflow = isNavVisible ? 'hidden' : 'initial';
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [isNavVisible]);
 
   return (
