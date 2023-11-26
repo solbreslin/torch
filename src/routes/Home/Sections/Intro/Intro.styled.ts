@@ -13,7 +13,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     font-size: 3rem;
     font-weight: 500;
     line-height: 1.1;
-    min-height: 80vh;
+    min-height: 70vh;
     place-content: center;
     position: relative;
     text-align: center;

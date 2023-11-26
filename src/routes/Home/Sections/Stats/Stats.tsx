@@ -9,7 +9,12 @@ const Stats = () => {
     <Root>
       {data.map((d) => (
         <div key={d.stat}>
-          <CountUp end={d.number} duration={2} suffix={'%'} />
+          <CountUp
+            enableScrollSpy={true}
+            end={d.number}
+            duration={2}
+            suffix={'%'}
+          />
           <p>{d.stat}</p>
         </div>
       ))}
