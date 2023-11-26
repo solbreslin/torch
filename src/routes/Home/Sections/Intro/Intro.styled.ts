@@ -4,7 +4,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
   align-items: flex-end;
   background-color: var(--intro-bg-color);
   display: flex;
-  min-height: calc(100vh - var(--header-height));
+  min-height: 70vh;
   overflow: hidden;
 
   position: relative;
@@ -15,8 +15,8 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     border-radius: 9999px;
     bottom: 0;
     content: '';
-    filter: blur(50px);
-    height: 50vmin;
+    filter: blur(30px);
+    height: 30vmin;
     left: 0;
     margin: auto;
     right: 0;
@@ -24,7 +24,9 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     pointer-events: none;
     position: absolute;
     transform: ${({ scroll }) =>
-      `translate3d(0, calc(${scroll / 3}px - var(--header-height)), 0)`};
+      `translate3d(0, calc(${scroll / 3}px - var(--header-height)), 0) scale(${
+        scroll / 100 + 1
+      })`};
   }
 
   section {
