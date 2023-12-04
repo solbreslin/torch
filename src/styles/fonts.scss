@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: "founders";
+  font-style: normal;
+  font-weight: 700;
+  src: local("founders"), url("@/assets/fonts/FoundersGrotTextTest-Bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "soehne";
   font-style: normal;
   font-weight: normal;

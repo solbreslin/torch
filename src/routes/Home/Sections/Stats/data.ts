@@ -5,8 +5,8 @@ export const data = [
     suffix: '%',
   },
   {
-    number: 75,
-    stat: 'of companies are more likely to have a CEO named David than a CEO who is a woman',
+    number: 15,
+    stat: 'of Fortune 500 companies have a female CEO',
     suffix: '%',
   },
   {

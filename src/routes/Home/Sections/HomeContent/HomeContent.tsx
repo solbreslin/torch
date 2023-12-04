@@ -20,7 +20,7 @@ const HomeContentSection = () => (
         </p>
         <p>
           <Link to={'/survey'} className={'primary'}>
-            Take the survey
+            Share your voice
           </Link>
         </p>
       </section>

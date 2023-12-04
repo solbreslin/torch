@@ -11,7 +11,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
   h1 {
     display: grid;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.1;
     min-height: calc(100vh - var(--header-height));
     place-content: center;
@@ -42,6 +42,11 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       position: absolute;
       transform: ${({ scroll }) =>
         `translate3d(0, ${scroll / 3}px, 0) scale(${scroll / 300 + 1})`};
+
+      @media screen and (max-width: 800px) {
+        transform: ${({ scroll }) =>
+          `translate3d(0, ${scroll / 2}px, 0) scale(${scroll / 300 + 1})`};
+      }
     }
   }
 

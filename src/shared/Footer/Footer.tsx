@@ -7,11 +7,8 @@ const Footer = () => (
       <div className={'contact'}>
         <h1>Torch</h1>
         <p>
-          We are an early-stage startup and are looking for like-minded
-          investors who want to make a difference.
-        </p>
-        <p>
-          If that’s you, email us at{' '}
+          If you are believe in what we are building and are interested in
+          supporting us, reach out at{' '}
           <a href={'mailto:hello@the-torch.io'}>
             <strong>hello@the-torch.io</strong>
           </a>

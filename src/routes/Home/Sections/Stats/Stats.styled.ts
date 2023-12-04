@@ -15,7 +15,12 @@ export const Root = styled.section`
     span:first-child {
       color: var(--primary);
       font-size: 6rem;
+      font-weight: 700;
       line-height: 1;
+    }
+
+    p {
+      font-weight: 500;
     }
   }
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Root = styled.nav`
   display: flex;
@@ -36,7 +36,7 @@ export const Root = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)<{ index: number }>`
+export const StyledLink = styled(NavLink)<{ index: number }>`
   font-size: 2.5rem;
   opacity: 0;
   padding: 0.5rem;
@@ -51,8 +51,12 @@ export const StyledLink = styled(Link)<{ index: number }>`
     transition-delay: ${({ index }) => `${index / 4}s`};
   }
 
+  &.active {
+    text-decoration: underline;
+  }
+
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
     opacity: 1;
     padding: 1rem;
     transform: none;

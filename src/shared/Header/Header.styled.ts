@@ -4,6 +4,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   background-color: var(--header-bg-color);
   display: flex;
+  position: relative;
 
   .mobile-cta {
     margin-left: auto;

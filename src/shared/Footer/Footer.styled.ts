@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
-  background-color: var(--cream);
+  background-color: hsl(0, 0%, 90%);
 
   > div {
     margin: 0 auto;
