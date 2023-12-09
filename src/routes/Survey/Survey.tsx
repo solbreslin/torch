@@ -11,6 +11,7 @@ const SurveyPage = () => {
           height: 'calc(100vh - var(--header-height) - 100px)',
         }}
         inlineOnMobile={true}
+        disableScroll={true}
       />
     </Root>
   );
