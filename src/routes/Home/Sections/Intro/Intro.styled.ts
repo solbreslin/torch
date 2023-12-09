@@ -44,10 +44,12 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       pointer-events: none;
       position: absolute;
 
-      transform: ${({ scroll }) => `scale(${scroll / 200 + 1})`};
+      transform: ${({ scroll }) =>
+        `translate3d(0, 0, 0) scale(${scroll / 200 + 1})`};
 
       @media screen and (max-width: 800px) {
-        transform: ${({ scroll }) => `scale(${scroll / 300 + 1})`};
+        transform: ${({ scroll }) =>
+          `translate3d(0, 0, 0) scale(${scroll / 100 + 1})`};
       }
     }
   }
