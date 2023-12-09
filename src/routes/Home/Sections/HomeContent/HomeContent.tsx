@@ -25,8 +25,8 @@ const HomeContentSection = () => (
               fontFamily: 'var(--font-x-sans)',
             }}
           >
-            Share your experience now, and together, our voices can ignite
-            change.{' '}
+            Share your workplace experience with us now. Together, our voices
+            can ignite change.
           </p>
           <p>
             <Link to={'/survey'} className={'primary'}>

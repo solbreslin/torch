@@ -14,7 +14,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     font-size: 4rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    line-height: 1.1;
+    line-height: 1;
     min-height: calc(100vh - var(--header-height));
     place-content: center;
     position: relative;
