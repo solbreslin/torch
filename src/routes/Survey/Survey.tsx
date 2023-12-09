@@ -7,7 +7,9 @@ const SurveyPage = () => {
     <Root>
       <Widget
         id="T49g6Tfg"
-        style={{ height: 'calc(100vh - var(--header-height)' }}
+        style={{
+          height: 'calc(100vh - var(--header-height) - 100px)',
+        }}
         inlineOnMobile={true}
       />
     </Root>

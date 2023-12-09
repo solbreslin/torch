@@ -16,7 +16,7 @@ const Header = () => {
     if (headerRef.current) {
       let height = headerRef?.current?.clientHeight;
       height = Math.round(height);
-      headerRef.current.style.height = `${height}px`;
+      headerRef.current.style.height = `76px`;
 
       document.documentElement.style.setProperty(
         '--header-height',
