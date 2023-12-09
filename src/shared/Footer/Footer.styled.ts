@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
-  background-color: hsl(0, 0%, 90%);
+  background-color: var(--rich-black);
+  color: white;
 
   > div {
     margin: 0 auto;
-    max-width: 1080px;
-    padding: 2rem 1rem 1rem;
+    max-width: 1200px;
+    padding: 2rem 0 2rem;
     width: calc(100% - 2rem);
     display: grid;
     grid-gap: 1rem;
@@ -55,9 +56,11 @@ export const FooterStyled = styled.footer`
   }
 
   h1 {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-family: var(--font-x-sans);
+    font-size: 1.75rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
 
   nav {

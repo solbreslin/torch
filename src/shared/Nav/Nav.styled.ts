@@ -38,9 +38,11 @@ export const Root = styled.nav`
 
 export const StyledLink = styled(NavLink)<{ index: number }>`
   font-size: 2.5rem;
+  font-weight: 500;
   opacity: 0;
   padding: 0.5rem;
   position: relative;
+  text-transform: uppercase;
   transform: translateY(10px);
   transition: transform 0.25s ease-out, opacity 0.25s ease-out;
   transition-delay: 0s;

@@ -10,8 +10,10 @@ export const IntroStyled = styled.div<{ scroll: number }>`
 
   h1 {
     display: grid;
-    font-size: 3rem;
-    font-weight: 700;
+    font-family: var(--font-x-sans);
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     line-height: 1.1;
     min-height: calc(100vh - var(--header-height));
     place-content: center;
@@ -19,11 +21,12 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     text-align: center;
 
     @media screen and (min-width: 768px) {
-      font-size: 5rem;
+      font-size: 8rem;
     }
 
     span {
       position: relative;
+      text-transform: uppercase;
     }
 
     &:before {
@@ -40,6 +43,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       top: 0;
       pointer-events: none;
       position: absolute;
+
       transform: ${({ scroll }) =>
         `translate3d(0, ${scroll / 3}px, 0) scale(${scroll / 300 + 1})`};
 
@@ -52,12 +56,12 @@ export const IntroStyled = styled.div<{ scroll: number }>`
 
   div {
     max-width: 60ch;
-    padding: 6rem 0 0;
+    padding: 4rem 0 0;
     position: relative;
 
     p {
-      font-family: 'soehne kraftig';
-      line-height: 1.35;
+      font-weight: 500;
+      line-height: 1.25;
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }

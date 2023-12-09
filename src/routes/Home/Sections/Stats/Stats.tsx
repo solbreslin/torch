@@ -16,7 +16,14 @@ const Stats = () => {
             duration={2}
             suffix={'%'}
           />
-          <p style={{ fontSize: '1.25rem' }}>{d.stat}</p>
+          <p>
+            {d.stat}{' '}
+            <cite>
+              <a target="_blank" href={d.cite.link} rel="noreferrer">
+                [{d.cite.name}]
+              </a>
+            </cite>
+          </p>
         </div>
       ))}
     </Root>

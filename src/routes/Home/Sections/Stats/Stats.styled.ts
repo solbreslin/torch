@@ -4,7 +4,7 @@ export const Root = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 4rem;
-  max-width: 1000px;
+  max-width: 1200px;
 
   div {
     align-self: flex-start;
@@ -14,13 +14,23 @@ export const Root = styled.section`
 
     span:first-child {
       color: var(--primary);
-      font-size: 6rem;
+      font-size: 8rem;
       font-weight: 700;
       line-height: 1;
     }
 
     p {
-      font-weight: 500;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+    cite {
+      white-space: nowrap;
+    }
+    cite a {
+      font-size: 0.75rem;
+      font-style: normal;
+      text-decoration: underline;
     }
   }
 `;

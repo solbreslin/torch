@@ -1,15 +1,15 @@
 :root {
-  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;;
+  --font-sans: "founders", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-x-sans: "founders-x", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 
+  --platinum: #DCDCDD;
+  --rich-black: #101419;
   --coral: #FF784F;
-  --charcoal: #3A4454;
-  --orange: #F85E00;
-  --uranian-blue: #B5E2FA;
-  --cream: #FFFECB;
 
   --primary: var(--coral);
-  --intro-bg-color: var(--uranian-blue);
-  --header-bg-color: var(--uranian-blue);
+  --text-color: var(--rich-black);
+  --intro-bg-color: var(--platinum);
+  --header-bg-color: var(--platinum);
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  color: var(--charcoal);
+  color: var(--text-color);
   font: 1rem/1.45 var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -65,7 +65,7 @@ a {
 
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 ul {
