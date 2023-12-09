@@ -5,8 +5,7 @@ export const Root = styled.nav`
   display: flex;
   background: var(--header-bg-color);
   flex-direction: column;
-  height: calc(100vh - var(--header-height)); // fallback
-  height: calc(100dvh - var(--header-height));
+  height: calc(100vh - var(--header-height));
   left: 0;
   padding: 4rem 0 0 0.5rem;
   position: absolute;
