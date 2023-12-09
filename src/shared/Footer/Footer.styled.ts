@@ -59,6 +59,7 @@ export const FooterStyled = styled.footer`
     font-family: var(--font-x-sans);
     font-size: 1.75rem;
     font-weight: 600;
+    letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }

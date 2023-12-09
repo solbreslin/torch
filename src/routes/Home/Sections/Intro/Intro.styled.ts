@@ -44,19 +44,15 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       pointer-events: none;
       position: absolute;
 
-      transform: ${({ scroll }) =>
-        `translate3d(0, ${scroll / 3}px, 0) scale(${scroll / 300 + 1})`};
+      transform: ${({ scroll }) => `scale(${scroll / 200 + 1})`};
 
       @media screen and (max-width: 800px) {
-        transform: ${({ scroll }) =>
-          `translate3d(0, ${scroll / 2}px, 0) scale(${scroll / 300 + 1})`};
+        transform: ${({ scroll }) => `scale(${scroll / 300 + 1})`};
       }
     }
   }
 
   div {
-    max-width: 60ch;
-    padding: 4rem 0 0;
     position: relative;
 
     p {
@@ -64,6 +60,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       line-height: 1.25;
       font-size: 2rem;
       margin-bottom: 0.5rem;
+      max-width: 24ch;
     }
   }
 `;

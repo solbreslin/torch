@@ -20,8 +20,6 @@ const Team = () => {
       {processedData.map((d) => (
         <div key={d.name}>
           <img srcSet={d.srcset} alt={d.name} />
-          <h3>{d.name}</h3>
-          {/*<p>{d.bio}</p>*/}
         </div>
       ))}
     </Root>

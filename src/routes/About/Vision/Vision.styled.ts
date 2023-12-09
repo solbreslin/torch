@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Root = styled.section`
-  max-width: 66ch;
+  max-width: 1200px;
+
+  > div {
+    max-width: 70ch;
+  }
 
   h1 {
     font-size: 2rem;
@@ -9,6 +13,8 @@ export const Root = styled.section`
   }
 
   p {
+    font-size: 1.25rem;
+    line-height: 1.45;
     margin-bottom: 0.675rem;
   }
 `;

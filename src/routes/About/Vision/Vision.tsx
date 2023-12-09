@@ -1,29 +1,51 @@
 import React from 'react';
 import { Root } from './Vision.styled';
+import Team from '../Team/Team';
 
 const Vision = () => {
   return (
     <Root>
-      <h1>About</h1>
-      <p>
-        We created Torch to have a space that will show what it's truly like to
-        work somewhere, not just for the majority but for everybody.
-      </p>
-      <p>
-        We see technology as a powerful tool for accountability and inspiring
-        action. By using open-ended questions and machine learning, we aim to
-        illuminate and extract valuable data from even the most ambiguous
-        aspects of workplace cultures. By shining a light on the ambiguous "grey
-        areas” in a workplace we can create a new set of rules where everyone
-        should be treated with equal respect and fairness.
-      </p>
-      <p>
-        By 2030, Generation Z will constitute over 30% of the workforce,
-        bringing with them a strong preference for diversity and inclusion.
-        Research shows that 83% of Gen Z workers prefer to work for companies
-        with diverse teams; and 74% believe that companies should create more
-        inclusive environments.
-      </p>
+      <div>
+        <h1>About</h1>
+        <p>
+          We met in 2022 when Bethany started mentoring Frances, and we soon
+          identified a shared calling to create workplaces that felt inclusive
+          and fair for everyone. With a combined experience of over 40 years in
+          the workplace, we had seen enough first-hand to know that change was
+          needed.{' '}
+        </p>
+        <p>
+          Whether you're seeking a workplace that aligns with your values or
+          you're a company looking to genuinely improve, Torch will be a space
+          that will illustrate what it is truly like to work somewhere. Our
+          vision for Torch is to leverage shared experiences and AI technology
+          to expose discrimination and inequity in the workplace, and through
+          transparency and visibility create accountability.
+        </p>
+        <p>
+          Generation Z is set to be 30% of the workforce by 2030 and will be the
+          most diverse generation to ever exist. Because of this there is a need
+          for workplaces to shift and embody values important to this
+          generation.
+        </p>
+        <p>
+          At this stage, we are asking for as many people as possible to share
+          their experiences. We aim to validate that through collectively coming
+          together we can gain insight and data that doesn’t currently exist.
+        </p>
+        <p>
+          Thank you for being part of our journey towards as more inclusive
+          world.
+        </p>
+        <p>
+          Warm regards,
+          <br />
+          Frances Mannion and Bethany Ayers
+          <br />
+          Co-Founders, Torch
+        </p>
+        <Team />
+      </div>
     </Root>
   );
 };

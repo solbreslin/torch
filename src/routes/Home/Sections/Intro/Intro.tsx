@@ -13,8 +13,8 @@ const IntroSection = () => {
 
         <div>
           <p className={'text-l'}>
-            Torch is dedicated to showing what it feels like to work at a
-            company, regardless of who you are.
+            Torch's mission is to show what it feels like to work at a company -
+            regardless of who you are.
           </p>
         </div>
       </section>

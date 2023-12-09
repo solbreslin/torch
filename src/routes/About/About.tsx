@@ -6,7 +6,6 @@ import Vision from './Vision/Vision';
 const AboutPage = () => (
   <Root>
     <Vision />
-    <Team />
 
     <section style={{ display: 'none' }}>
       <h1>FAQ</h1>
