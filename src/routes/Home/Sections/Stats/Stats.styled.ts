@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Root = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
   max-width: 1200px;
 
@@ -20,8 +20,7 @@ export const Root = styled.section`
     }
 
     p {
-      font-size: 1.35rem;
-      font-weight: 400;
+      font-size: 1.25rem;
       line-height: 1.35;
     }
     cite {

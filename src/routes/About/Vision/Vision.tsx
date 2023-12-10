@@ -37,12 +37,13 @@ const Vision = () => {
           Thank you for being part of our journey towards a more inclusive
           world.
         </p>
+        <p>Warm regards,</p>
         <p>
-          Warm regards,
-          <br />
-          Frances Mannion and Bethany Ayers
-          <br />
-          Co-Founders, Torch
+          <strong>
+            Frances Mannion and Bethany Ayers
+            <br />
+            Co-Founders, Torch
+          </strong>
         </p>
         <Team />
       </div>

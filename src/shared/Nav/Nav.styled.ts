@@ -36,8 +36,8 @@ export const Root = styled.nav`
 `;
 
 export const StyledLink = styled(NavLink)<{ index: number }>`
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-family: var(--font-x-sans);
   opacity: 0;
   padding: 0.5rem;
   position: relative;
@@ -54,10 +54,13 @@ export const StyledLink = styled(NavLink)<{ index: number }>`
 
   &.active {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
   }
 
   @media (min-width: 768px) {
+    font-family: var(--font-sans);
     font-size: 1.25rem;
+    font-weight: 400;
     opacity: 1;
     padding: 1rem;
     transform: none;

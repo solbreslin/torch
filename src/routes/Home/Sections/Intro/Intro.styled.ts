@@ -12,7 +12,7 @@ export const IntroStyled = styled.div<{ scroll: number }>`
     display: grid;
     font-family: var(--font-x-sans);
     font-size: 4rem;
-    font-weight: 600;
+
     letter-spacing: -0.01em;
     line-height: 1;
     min-height: calc(100vh - var(--header-height));
@@ -59,10 +59,14 @@ export const IntroStyled = styled.div<{ scroll: number }>`
 
     p {
       font-weight: 500;
-      line-height: 1.25;
-      font-size: 2rem;
+      line-height: 1.3;
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
-      max-width: 24ch;
+      max-width: 28ch;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
     }
   }
 `;

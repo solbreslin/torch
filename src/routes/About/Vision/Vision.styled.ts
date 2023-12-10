@@ -4,10 +4,11 @@ export const Root = styled.section`
   max-width: 1200px;
 
   > div {
-    max-width: 70ch;
+    max-width: 60ch;
   }
 
   h1 {
+    font-weight: 700;
     font-size: 2rem;
     margin-bottom: 1rem;
   }

@@ -24,10 +24,17 @@ export const FooterStyled = styled.footer`
     }
   }
 
+  p,
+  a {
+    font-weight: 300;
+  }
   .contact {
     grid-area: contact;
     margin-bottom: 1rem;
     max-width: 30ch;
+
+    p {
+    }
 
     a {
       white-space: nowrap;
@@ -58,8 +65,7 @@ export const FooterStyled = styled.footer`
   h1 {
     font-family: var(--font-x-sans);
     font-size: 1.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.025em;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }

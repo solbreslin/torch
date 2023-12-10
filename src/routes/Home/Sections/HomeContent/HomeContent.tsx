@@ -19,7 +19,7 @@ const HomeContentSection = () => (
           <p
             style={{
               fontSize: '3rem',
-              fontWeight: 600,
+
               lineHeight: 1,
               marginBottom: '2rem',
               fontFamily: 'var(--font-x-sans)',
