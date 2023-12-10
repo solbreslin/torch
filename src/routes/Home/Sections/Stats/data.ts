@@ -10,7 +10,7 @@ export const data = [
   },
   {
     number: 34,
-    stat: 'of employees leave a job due to an unresolved harassment issues',
+    stat: 'of employees leave a job due to an unresolved harassment issue',
     suffix: '%',
     cite: {
       link: 'https://www.allvoices.co/blog/the-state-of-workplace-harassment-2021',

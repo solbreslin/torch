@@ -34,7 +34,7 @@ const Vision = () => {
           together we can gain insight and data that doesn’t currently exist.
         </p>
         <p>
-          Thank you for being part of our journey towards as more inclusive
+          Thank you for being part of our journey towards a more inclusive
           world.
         </p>
         <p>
