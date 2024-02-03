@@ -10,13 +10,8 @@ const ExperiencesPage = () => {
           addresses) will ever be shared publicly.
         </p>
       </div>
-      <form
-        name="experiences"
-        method="POST"
-        data-netlify="true"
-        data-netlify-recaptcha="true"
-      >
-        <input type="hidden" name="form-name" value="experiences" />
+      <form name="experience" method="POST">
+        <input type="hidden" name="form-name" value="experience" />
 
         <div>
           <label>
@@ -24,6 +19,7 @@ const ExperiencesPage = () => {
             <input type="text" name="company_name" />
           </label>
         </div>
+
         <div>
           <label>
             <span>
