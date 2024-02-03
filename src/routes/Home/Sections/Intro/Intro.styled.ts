@@ -61,11 +61,20 @@ export const IntroStyled = styled.div<{ scroll: number }>`
       font-weight: 500;
       line-height: 1.3;
       font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      max-width: 28ch;
+      margin-bottom: 1rem;
+      max-width: 50ch;
 
       @media screen and (min-width: 768px) {
         font-size: 2rem;
+      }
+
+      &:nth-child(2) {
+        font-size: 1.25rem;
+        line-height: 1.5;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
