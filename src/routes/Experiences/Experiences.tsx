@@ -35,7 +35,6 @@ const ExperiencesPage = () => {
             <textarea rows={4} name="message"></textarea>
           </label>
         </div>
-        <div data-netlify-recaptcha="true"></div>
         <div>
           <button className="primary" type="submit">
             Send
