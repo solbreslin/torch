@@ -9,12 +9,12 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ isNavVisible, toggleNav }) => (
   <Root className={isNavVisible ? 'visible' : ''}>
     <StyledLink
-      to={`experiences`}
+      to={`about`}
       onClick={toggleNav}
       index={1}
       className={isNavVisible ? 'visible' : ''}
     >
-      Experiences
+      About
     </StyledLink>
     <StyledLink
       to={`privacy`}

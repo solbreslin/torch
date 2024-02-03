@@ -45,7 +45,7 @@ const Header = () => {
       <NavToggle isNavVisible={isNavVisible} toggleNav={toggleNav} />
       <Brand />
       <Nav isNavVisible={isNavVisible} toggleNav={toggleNav} />
-      <Link to={`survey`} className={'mobile-cta primary'}>
+      <Link to={`experiences`} className={'mobile-cta primary'}>
         Share your voice
       </Link>
     </HeaderStyled>

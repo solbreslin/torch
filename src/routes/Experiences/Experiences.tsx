@@ -5,6 +5,7 @@ const ExperiencesPage = () => {
   return (
     <Root>
       <div>
+        <h1>Share your experience</h1>
         <p>
           No personal identifiers (such as names, contact details, or specific
           addresses) will ever be shared publicly.
@@ -19,7 +20,12 @@ const ExperiencesPage = () => {
             <input type="text" name="company_name" />
           </label>
         </div>
-
+        <div>
+          <label>
+            <span>Your experience</span>
+            <textarea rows={6} name="experience" />
+          </label>
+        </div>
         <div>
           <label>
             <span>
@@ -32,7 +38,7 @@ const ExperiencesPage = () => {
                 comfortable sharing
               </span>
             </span>
-            <textarea rows={4} name="message"></textarea>
+            <textarea rows={2} name="about_you"></textarea>
           </label>
         </div>
         <div>

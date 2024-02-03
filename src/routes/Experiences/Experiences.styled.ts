@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export const Root = styled.div`
-  padding-top: 4rem;
+  padding: 4rem 1rem;
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
   > div {
     margin: 0 auto 2rem;
@@ -40,6 +46,7 @@ export const Root = styled.div`
   textarea {
     border: 2px solid hsla(0, 0%, 0%, 0.25);
     border-radius: 4px;
+    font: inherit;
     padding: 0.5rem;
     resize: vertical;
 
@@ -51,5 +58,6 @@ export const Root = styled.div`
 
   button {
     background-color: var(--primary);
+    cursor: pointer;
   }
 `;
